@@ -41,6 +41,8 @@ int main()
 	scanf("%d", &age);
 	fprintf(SaveData_fp, "%d\n", age);
 
+	fclose(SaveData_fp);
+
 	return 0;
 
 }

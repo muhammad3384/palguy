@@ -50,5 +50,7 @@ int main()
 	printf("Address: %s \n", address);
 	printf("Age: %d \n", age);
 
+	fclose(SaveData_fp);
+
 	return 0;
 }
