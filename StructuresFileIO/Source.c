@@ -83,15 +83,15 @@ void PrintArray(DATA info[])
 	}
 }
 
-void EnterDataEntry(DATA info[], ENTRY name)
+void EnterDataEntry(DATA info[], ENTRY data)
 {
 	for (int i = 0; i < NumOfEntries; i++)
 	{
 		if (info[i].status != true)
 		{
 			info[i].status = true;
-			info[i].data = name;
-			break;
+			info[i].data = data;
+			break; //Don't use break, but you want to exit the for loop to only put in one entry
 		}
 	}
 }
